@@ -1,0 +1,40 @@
+*{
+    background-color:white;
+
+/* display: inline;*/
+} 
+.A{
+   
+    float: left;
+    display: block;
+    /* font-size: 35px; */
+    margin-left: 170px;
+}
+.B{
+   
+    float: right;
+    /* margin-right: 40px; */
+    /* font-size: 35px; */
+    display: block;
+    margin-right: 170px;
+}
+.view{
+    padding:10px 50px;
+   
+    background-color: rgb(176,134,114);
+    color: white;
+    border-radius: 20px;
+    text-decoration: dotted;
+    font-size: 20px;
+    transition-duration: .5s;
+    transition-delay: .2s;
+}
+h1{
+    text-transform: capitalize;
+}
+p{
+    font-family:'Courier New', Courier, monospace;
+}
+a:hover{
+    margin-left:30px;
+}

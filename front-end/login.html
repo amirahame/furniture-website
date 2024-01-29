@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/log.css"/>
+    <script src="https://kit.fontawesome.com/7a7ef0d59a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div class="cont">
+<div class="form">
+    <h1 id="title"> sign up </h1>
+    <form>
+        <div class="groub">
+            <div class="field" id="field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="email" id="email">
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="password" id="pass">
+            </div>
+
+        </div>
+        <div>
+            <p>lost password! <a href="">click here</a></p>
+        </div>
+        <div class="btn">
+            <button type="button" id="signup">sign up</button>
+            <button type="button" class="d" id="signin" >sign in</button>
+            <button type="button"  id="signin" class="d" onclick="auth()">submit</button>
+        </div>
+    </form>
+</div>
+ </div>
+<script>
+let signin=document.getElementById("signin");
+let signup=document.getElementById("signup");
+let titlt=document.getElementById("title");
+let field=document.getElementById("field");
+signin.onclick=function(){
+    field.style.maxHeight="0";
+    title.innerHTML="sign in";
+   
+}
+
+signup.onclick=function(){
+    field.style.maxHeight="60px";
+    title.innerHTML="sign up";
+   
+}
+function auth(){
+var email=document.getElementById("email").value;
+var pass=document.getElementById("pass").value;
+if (email=="a@gmail.com"&&pass=="123"){
+    window.location.assign("pro.html");
+    alert("login sucessfully");
+}else{
+    alert("invalid information");
+    return;
+    }}
+</script>
+</body>
